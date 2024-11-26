@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c2331"/>
+      <stop offset="100%" stop-color="#121820"/>
+    </linearGradient>
+    
+    <pattern id="copperTexture" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#2c3e50"/>
+      <circle cx="10" cy="10" r="1" fill="#34495e"/>
+      <circle cx="5" cy="5" r="0.5" fill="#2c3e50" opacity="0.7"/>
+      <circle cx="15" cy="15" r="0.5" fill="#2c3e50" opacity="0.7"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with gradient and copper texture -->
+  <rect width="1920" height="1080" fill="url(#backgroundGradient)"/>
+  <rect width="1920" height="1080" fill="url(#copperTexture)" opacity="0.2"/>
+  
+  <!-- Complex Multi-Layer Circuit Paths -->
+  <g opacity="0.8">
+    <!-- Bottom Layer: Ground Plane Traces -->
+    <path d="M0,50 C200,20 400,80 600,50 S800,20 1000,50 S1200,80 1400,50 S1600,20 1920,50" 
+          fill="none" stroke="#00ff41" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+    
+    <!-- Mid Layer: Signal Traces -->
+    <path d="M0,150 Q300,100 600,150 T1200,200 T1500,250 T1920,200" 
+          fill="none" stroke="#00ff41" stroke-width="1.5"/>
+    
+    <path d="M0,250 C400,200 800,300 1200,250 S1600,200 1920,250" 
+          fill="none" stroke="#00ff41" stroke-width="1" stroke-dasharray="5,5" opacity="0.6"/>
+    
+    <!-- Top Layer: High-Density Routing -->
+    <g stroke="#00ff41" stroke-width="0.8">
+      <path d="M50,350 L200,400 L350,350 L500,400 L650,350 L800,400 L950,350 L1100,400 L1250,350 L1400,400 L1550,350 L1700,400 L1850,350" 
+            fill="none" opacity="0.7"/>
+      
+      <path d="M100,450 L250,500 L400,450 L550,500 L700,450 L850,500 L1000,450 L1150,500 L1300,450 L1450,500 L1600,450 L1750,500 L1900,450" 
+            fill="none" opacity="0.5"/>
+    </g>
+  </g>
+  
+  <!-- Circuit Components and Nodes -->
+  <g opacity="0.7">
+    <!-- Pads and Vias -->
+    <g fill="#00ff41">
+      <circle cx="300" cy="200" r="5" opacity="0.6"/>
+      <circle cx="750" cy="300" r="4" opacity="0.6"/>
+      <circle cx="1200" cy="250" r="6" opacity="0.6"/>
+      <circle cx="1600" cy="350" r="3" opacity="0.6"/>
+    </g>
+    
+    <!-- Simulated Components -->
+    <g stroke="#00ff41" fill="none">
+      <rect x="400" y="300" width="30" height="15" transform="rotate(45 415 307)"/>
+      <rect x="800" y="400" width="25" height="12" transform="rotate(-30 812 406)"/>
+      <rect x="1300" y="350" width="35" height="18" transform="rotate(60 1317 359)"/>
+    </g>
+  </g>
+  
+  <!-- Fine Routing Details -->
+  <g opacity="0.3">
+    <line x1="0" y1="50" x2="1920" y2="50" stroke="#00ff41" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="1920" y2="150" stroke="#00ff41" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="1920" y2="250" stroke="#00ff41" stroke-width="0.5"/>
+    <line x1="0" y1="350" x2="1920" y2="350" stroke="#00ff41" stroke-width="0.5"/>
+  </g>
+</svg>

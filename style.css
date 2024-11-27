@@ -196,7 +196,7 @@ section{
 }
 
 .section__text p{
-    font-weight: 600;
+    font-weight: 300;
 }
 
 
@@ -204,7 +204,6 @@ section{
     align-self: center;
     color: #ff8400ae;
     font-size: 1.75rem;
-    font-weight: 200;
     margin-bottom: 1rem
 }
 

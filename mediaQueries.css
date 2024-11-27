@@ -32,6 +32,10 @@
     section, .section-container{
         height: fit-content;
     }
+
+    .section__text{
+        flex-wrap: wrap;
+    }
     
     section{
         margin: 0 5%;
@@ -103,12 +107,26 @@
         justify-content: center;
     }
 
+    .section__text{
+        flex-wrap: wrap;
+    }
     .section__text__p2{
+        text-wrap: wrap;
+        flex-wrap: wrap;
         font-size: 1.25rem;
     }
 
     .title{
         font-size: 2rem;
+    }
+
+    .details-container{
+        gap: 1rem;
+    }
+
+    .about-containers{
+        margin: .5rem;
+        gap: 1rem;
     }
 
     .text-container{

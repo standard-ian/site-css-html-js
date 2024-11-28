@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav id="desktop-nav">
-            <div class="logo">Ian Leuty</div>
+            <div class="logo">tachikoma.foo</div>
             <div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
             </div>
         </nav>
         <nav id="hamburger-nav">
-            <div class="logo">Epiphyte</div>
+            <div class="logo">tachikoma.foo</div>
             <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -40,14 +40,17 @@
             <div class="section__pic-container">
                 <img src="./assets/profile-pic.png" 
                      alt="Ian Leuty profile picture"
-                     style="border-radius: 20px;"
+                     style="border-radius: 10px;
+                     border-style: inset;
+                     border-color: darkgoldenrod;"
+
                 />
             </div>
             <div class="section__text">
                 <h1 class="title">Ian Leuty</h1>
                 <p class="section__text__p2">IT Professional</p>
                 <p class="section__text__p2">Software Engineering Student</p>
-                <p class="section__text__p2">Future Solutions Architect and Sysadmin</p>
+                <p class="section__text__p2">Solutions Architect and Sysadmin in Training</p>
                 <div class="btn-container">
                     <button 
                         class="btn btn-color-1"
@@ -61,18 +64,23 @@
                     </button>
                 </div>
                 <div id="socials-container">
-                    <img 
-                        src="./assets/linkedin.png" 
-                        alt="My LinkedIn profile"
-                        class="icon" 
-                        onclick="location.href='https://www.linkedin.com/in/ian-leuty-6b18b6109/'"
-                    />
-                    <img
-                        src="./assets/github.png"
-                        alt="My Github profile"
-                        class="icon"
-                        onclick="location.href='https://github.com/standard-ian/'"
-                    />
+                    <a  href="https://linkedin.com/in/ian-leuty-6b18b6109/"
+                        target="_blank"     
+                        rel="noopener noreferrer">
+                        <img src="./assets/linkedin.png" 
+                             alt="My LinkedIn profile"
+                             class="icon"
+                        >
+                    </a>
+                    <a  href="https://github.com/standard-ian/" 
+                        target="_blank"     
+                        rel="noopener noreferrer">
+                        <img src="./assets/github.png" 
+                             alt="My Github profile"
+                             class="icon"
+                        >
+                    </a>
+                    
                 </div>
             </div>
         </section>
@@ -98,8 +106,11 @@
                             />
                             <h3>Experience</h3>
                             <p>PSU OIT - Helpdesk</p>
+                            <br>
                             <p>PSU MCECS CAT - Computer Action Team</p>
+                            <br>
                             <p>PSU CS Department - Technical Course Support Specialist</p>
+                            <br>
                             <p>Schiller Clay Works - Process Engineer</p>
                         </div>
                         <div class="details-container">
@@ -158,8 +169,11 @@
                             />
                             <h3>Projects:</h3>
                             <p>Homelab Proxmox VE Server</p>
+                            <br>
                             <p>Ubuntu, RHEL/Rocky, Kali learning environments </p>
+                            <br>
                             <p>Containerized VPN server using Wireguard</p>
+                            <br>
                             <p>NFS Running on Proxmox's Debian</p>
                         </div>
                         <div class="details-container">
@@ -179,6 +193,7 @@
                                         <p>Vim</p>
                                         <p>valgrind</p>
                                         <p>VS Code</p>
+                                        <p>Jira/Confluence</p>
                                     </div>
                                 </div> 
                         </div>

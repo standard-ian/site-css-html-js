@@ -293,6 +293,7 @@ section{
 }
 
 #about p{
+    justify-content: center;
     font-size: larger;
 }
 
